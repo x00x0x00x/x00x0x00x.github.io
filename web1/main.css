@@ -1,4 +1,4 @@
-body {
+body, .jumbotron {
   padding: 0;
   margin: 0;
   background: #f2f6e9;
@@ -71,7 +71,21 @@ body {
 }
 
 .navbar {
+  /* een toepasselijke kleur voor de navbar */
   background: #252525;
+}
+
+.header {
+  /* een andere foto gebruiken voor de achtergrond van de jumbotron */
+  background-image: url('images/header_bg_alt.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.jumbotron {
+  /* het afronden van de hoeken bij de jumbotron uitschakelen */
+  border-radius:0rem;
 }
 
 /* Custom CSS einde */
@@ -103,12 +117,12 @@ body {
   justify-content: flex-end;
 }
 
-.header {
+/*.header {
   background-image: url('images/header-background.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
-}
+}*/
 
 .overlay {
   position: absolute;
