@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md">
+  <!-- Het logo toevoegen en als hoogte 2rem instellen dmv de header-logo class-->
+  <img src="images/hatchet.png" class="header-logo">
+  <!-- 
+    Tekst veranderen naar Planet Adventure
+    De google font toepassen dmv de branding-font class
+    Extra padding toevoegen links dmv de pl-2 class
+    De href attribuut aanpassen naar index.html zodat deze functioneert op andere pagina's
+    De margin-right van navbar-brand wordt herleid naar 0 dmv mr-0 zodat de tekst gecentreerd staat op mobiel
+   -->
+  <a class="navbar-brand branding-font pl-2 mr-0" href="index.html">Planet Adventure</a>
+
+  <!-- 
+  Dit segment zorgt voor een hamburgermenu op mobiele apparaten (tot 768px) en is anders onzichtbaar
+  De class navbar-toggler-icon-custom wordt gebruikt om de icon te vervangen door een eigen icoon ipv de default hamburger
+  -->
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon navbar-toggler-icon-custom"></span>
+  </button>
+
+  <!--  -->
+  <div class="collapse navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reizen.html">Onze reizen</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="galerij.html">Fotogalerij</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reistips.html">Reistips</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

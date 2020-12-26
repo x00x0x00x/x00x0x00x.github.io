@@ -1,0 +1,210 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+/* Custom CSS start */
+
+.branding-font {
+  font-family: 'Palanquin', sans-serif;
+}
+
+.header-logo {
+  height: 2rem;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover{
+  /*
+    Zet de hamburger_menu image outline op 0px aangezien dit standaard weergegeven werd en er niet goed uit zag
+  */
+  outline: 0px;
+}
+
+.navbar-dark .navbar-toggler-icon-custom {
+  /*
+    Verandert de hamburger menu van icoon
+    Gebruikt !important om de default image van navbar-toggler-icon te overriden
+    Dit had ook gekund door de opmaak van navbar-toggler-icon over te nemen in deze nieuwe class
+    en de !important weg te laten, maar dit is korter en komt op hetzelfde neer
+  */
+  background-image: url('images/hamburger_menu.png')!important;
+}
+
+.navbar-brand {
+  /* 
+    Om te voorkomen dat na het hoveren en het vergroten van de tekst
+    de tekst opeens verspringt naar het origineel wordt er gebruik gemaakt van de ease-out vertraging
+    Deze vertraging is van toepassing op alle transities 
+  */
+  transition: all 500ms ease-out;
+}
+.navbar-brand:hover{
+  /* Standaard verandert dit van kleur, dit willen we niet dus maken we de tekst wit */
+  color: #fff;
+  /* De animatie duurt een halve seconde bij het hoveren en is van toepassing op alle transities */
+  transition: all 500ms ease-in;
+  /* Onderstaande past de scale transformatie toe op een varia van browsers */
+  transform: scale(1.15); /* W3C */
+  -webkit-transform: scale(1.15); /* Safari / Chrome */
+  -moz-transform: scale(1.15); /* Firefox */
+  -ms-transform: scale(1.15); /* IE */
+  -o-transform: scale(1.15); /* Opera */
+}
+
+.nav-link:hover{
+  color: #fff;
+  /*Zorgt ervoor dat de sparkle gif niet de gehele breedte beslaat maar zich beperkt tot de breedte van de content (de tekst)*/
+  display: inline-block;
+  /*Voegt een achtergrond afbeelding toe achter de tekst wanneer de cursor hierover beweegt*/
+  background-image: url('images/sparkle.gif');
+}
+
+.navbar {
+  background: #252525;
+}
+
+/* Custom CSS einde */
+
+/* Reeds bestaande CSS */
+
+/*
+.navbar {
+  background:#6ab446;
+}
+*/
+
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+
+/*
+.nav-link:hover {
+  color: #000;
+}
+*/
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.header {
+  background-image: url('images/header-background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 {
+  color: #6ab446;
+}
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description button {
+  border:1px solid #6ab446;
+  background:#6ab446;
+  border-radius: 0;
+  color:#fff;
+}
+.description button:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.features .form-control,
+.features input {
+    border-radius: 0;
+}
+.features .btn {
+  background-color: #589b37;
+  border: 1px solid #589b37;
+  color: #fff;
+  margin-top: 20px;
+}
+.features .btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+  
+  .description h1 {
+    font-size: 2em;
+  }
+  
+  .description p {
+    font-size: 1.2em;
+  }
+  
+  .features {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
