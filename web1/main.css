@@ -5,6 +5,17 @@ body {
 }
 /* Custom CSS start */
 
+#loadingOverlay {
+  opacity:    1.0; 
+  background: #fff; 
+  width:      100%;
+  height:     100%; 
+  z-index:    1337;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+}
+
 .branding-font {
   font-family: 'Palanquin', sans-serif;
 }
