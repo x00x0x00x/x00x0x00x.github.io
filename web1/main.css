@@ -88,6 +88,29 @@ body, .jumbotron {
   border-radius:0rem;
 }
 
+.card-mh {
+  max-height: 200px;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+.footer-infocursor {
+  cursor: help;
+}
+
+.footer-divider {
+  border-color: #f4f4f4;
+  opacity: 50%;
+}
+
+.footer-icos {
+  color: #f4f4f4;
+}
+
+.footer-txt {
+  font-style: italic;
+}
+
 /* Custom CSS einde */
 
 /* Reeds bestaande CSS */
@@ -196,8 +219,9 @@ body, .jumbotron {
 .page-footer {
   background-color: #222;
   color: #ccc;
-  padding: 60px 0 30px;
+  /*padding: 60px 0 30px;*/
 }
+
 .footer-copyright {
   color: #666;
   padding: 40px 0;

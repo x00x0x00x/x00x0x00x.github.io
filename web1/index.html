@@ -27,9 +27,11 @@
 
       <!-- naar deze div wordt de content van inc/header.html geschreven -->
       <div id="topDiv">
-        <!-- Default content welke vervangen wordt door js -->
+        <!-- Default content welke vervangen wordt door js 
+          Voor de externe links wordt target="_blank" gebruikt zodat deze openen
+          in een nieuw tabblad -->
         <nav class="navbar navbar-expand-md">
-          <p style="color:white;">Gelieve <a href="https://support.microsoft.com/nl-nl/help/3135465/how-to-enable-javascript-in-windows">Javascript in te schakelen</a> om van deze website gebruik te kunnen maken.<br>Als je de website op een lokale machine probeert te openen zal dit niet lukken door de CORS-policy welke van toepassing is op het file:// protocol.<br>Een live instantie is <a href="https://x00x0x00x.github.io/web1/">hier beschikbaar</a>.</p>
+          <p style="color:white;">Gelieve <a target="_blank" href="https://support.microsoft.com/nl-nl/help/3135465/how-to-enable-javascript-in-windows">Javascript in te schakelen</a> om van deze website gebruik te kunnen maken.<br>Als je de website op een lokale machine probeert te openen zal dit niet lukken door de CORS-policy welke van toepassing is op het file:// protocol.<br>Een live instantie is <a target="_blank" href="https://x00x0x00x.github.io/web1/">hier beschikbaar</a>.</p>
         </nav>
       </div>
 
@@ -45,55 +47,70 @@
           </div>
         </header>
         
-        <div class="container features">
+        <!-- Responsive kolommen dmv het grid systeem
+          col-lg-3 * 4 = 12 - desktop
+          col-md-6 * 2 = 12 - tablet
+          col-sm-12 * 1 = 12 - smartphone (zowel horizontaal als verticaal)
+
+          bij elke kolom is een bottom margin toegevoegd dmv mb-4 om er voor te zorgen dat:
+          - er witruimte is tussen de cards en de footer
+          - er bij tablet en mobiele weergave witruimte zit tussen de cards
+
+          om er voor te zorgen dat er witruimte is tussen de header en de cards wordt bij de container mt-4 toegevoegd, dit wordt niet bij de cards gezet aangezien dit tot dubbele witruimte zou leiden tussen de cards op mobiel / tablet
+
+          pr-0 werd toegevoegd om de afstand tussen de cards te verminderen
+        -->
+        <div class="container mt-4">
           <div class="row">
-            <div class="col-md-4">
-              <h3 class="feature-title">Lorem ipsum</h3>
-              <img src="images/column-1.jpg" class="img-fluid">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-            </div>
-            <div class="col-md-4">
-              <h3 class="feature-title">Lorem ipsum</h3>
-              <img src="images/column-2.jpg" class="img-fluid">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-            </div>
-            <div class="col-md-4">   
-                <h3 class="feature-title">Get in Touch!</h3>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="tik je naam" name="naam">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+              <div class="card">
+                <img src="images/spain.jpeg" class="card-img-top card-mh">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Spanje</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="#" class="btn btn-primary">Ontdek Spanje →</a>
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="tik je mailadres" name="email">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="4" name="bericht"></textarea>
-                </div>
-                <input type="submit" class="btn btn-secondary btn-block" value="Stuur door" name="">
-            </div>
-          </div> 
-        </div>
-        
-        <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-                  <div class="col-md-8">
-                      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-                </div>
-                <div class="col-md-4">
-                  <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                  <p>1640 Riverside Drive, Hill Valley, California
-                  <br/>info@mywebsite.com
-                  <br/>+ 01 234 567 88
-                  <br/>+ 01 234 567 89</p>
-                </div>
-          </div>
-            <div class="footer-copyright text-center">
-              © 2020 Copyright: MyWebsite.com
               </div>
             </div>
-        </footer>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+              <div class="card">
+                <img src="images/sweden.jpeg" class="card-img-top card-mh">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Zweden</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="#" class="btn btn-primary">Ontdek Zweden →</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+              <div class="card">
+                <img src="images/canada.jpeg" class="card-img-top card-mh">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Canada</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="#" class="btn btn-primary">Ontdek Canada →</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+              <div class="card">
+                <img src="images/colombia.jpeg" class="card-img-top card-mh">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Colombia</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="#" class="btn btn-primary">Ontdek Colombia →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- naar deze div wordt de footer geschreven door middel van javascript -->
+        <div class="bottomDiv">
+          <p>Gelieve Javascript in te schakelen.</p>
+        </div>
+        
+
       <!-- jquery slim min js vervangen door jquery min js om gebruik te kunnen maken van ajax functionaliteit -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
