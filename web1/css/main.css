@@ -14,6 +14,14 @@ body, .jumbotron {
   background: #f2f6e9;
 }
 
+.footer-a {
+  color: #ccc;
+}
+
+.footer-a:hover {
+  text-decoration: none;
+}
+
 #loadingOverlay {
   opacity:    1.0; 
   background: #fff; 
