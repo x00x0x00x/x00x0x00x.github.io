@@ -49,85 +49,77 @@
           </div>
         </header>
 
-        <!-- Responsive kolommen dmv het grid systeem
-          col-lg-4 * 3 = 12 - desktop
-          col-md-6 * 2 = 12 - tablet
-          col-sm-12 * 1 = 12 - smartphone (zowel horizontaal als verticaal) 
-
-          bij elke kolom is een bottom margin toegevoegd dmv mb-4 om er voor te zorgen dat:
-          - er witruimte is tussen de cards en de footer
-          - er bij tablet en mobiele weergave witruimte zit tussen de cards
-
-          om er voor te zorgen dat er witruimte is tussen de header en de cards wordt bij de container mt-4 toegevoegd, dit wordt niet bij de cards gezet aangezien dit tot dubbele witruimte zou leiden tussen de cards op mobiel / tablet
-
-          pr-0 werd toegevoegd om de afstand tussen de cards te verminderen
-        -->
-        <div class="container mt-4">
-          <div class="pb-2"> 
-            <!-- display inline wordt gebruikt om de tekst naast elkaar weer te geven, zie page-head-inline 
-
-              om wat ruimte te geven tussen titel en cards/cols wordt pb-2 gebruikt-->
-            <h2 class="page-head-inline pr-3">Onze Reizen</h2><h4 class="page-head-inline">Ontdek ze hier <i class="fal fa-level-down"></i></h4>
-          </div>
-
+        <div class="container mt-4 pb-4">
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
-              <div class="card">
-                <img src="images/france.jpeg" class="card-img-top card-mh-large">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Frankrijk</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 pr-0">
+              <div class="card mb-3">
+                <img src="images/risk.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Risicovolle bestemmingen</h5>
+                  <p class="card-text"><ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  </ol></p>
+                  <p class="card-text"><small class="text-muted">Laatst bijgewerkt: 01/04/2020</small></p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
-              <div class="card">
-                <img src="images/south_africa.jpeg" class="card-img-top card-mh-large">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Zuid-Afrika</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 pr-0">
+              <div class="card mb-3">
+                <img src="images/insurance.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Reisverzekeringen</h5>
+                  <p class="card-text"><ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  </ol></p>
+                  <p class="card-text"><small class="text-muted">Laatst bijgewerkt: 01/04/2020</small></p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
-              <div class="card">
-                <img src="images/los_angeles.jpeg" class="card-img-top card-mh-large">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Los Angeles</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 pr-0">
+              <div class="card mb-3">
+                <img src="images/passport.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Paspoort & visa's</h5>
+                  <p class="card-text"><ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  </ol></p>
+                  <p class="card-text"><small class="text-muted">Laatst bijgewerkt: 01/04/2020</small></p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
-              <div class="card">
-                <img src="images/miami.jpeg" class="card-img-top card-mh-large">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Miami</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
-              <div class="card">
-                <img src="images/croatia.jpeg" class="card-img-top card-mh-large">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Kroatië</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
-              <div class="card">
-                <img src="images/malta.jpeg" class="card-img-top card-mh-large">
-                <div class="card-body text-center">
-                  <h5 class="card-title">Malta</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-4 pr-0">
+              <div class="card mb-3">
+                <img src="images/scams.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Scams</h5>
+                  <p class="card-text"><ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                  </ol></p>
+                  <p class="card-text"><small class="text-muted">Laatst bijgewerkt: 01/04/2020</small></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
+
         <!------------------------------------------------------------------------------>
         <!------------------------Paginaspecifieke content einde------------------------>
         <!------------------------------------------------------------------------------>
