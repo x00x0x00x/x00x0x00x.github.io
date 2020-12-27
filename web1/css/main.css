@@ -1,9 +1,9 @@
+/* Custom CSS start */
 body, .jumbotron {
   padding: 0;
   margin: 0;
   background: #f2f6e9;
 }
-/* Custom CSS start */
 
 #loadingOverlay {
   opacity:    1.0; 
@@ -38,7 +38,7 @@ body, .jumbotron {
     Dit had ook gekund door de opmaak van navbar-toggler-icon over te nemen in deze nieuwe class
     en de !important weg te laten, maar dit is korter en komt op hetzelfde neer
   */
-  background-image: url('images/hamburger_menu.png')!important;
+  background-image: url('../images/hamburger_menu.png')!important;
 }
 
 .navbar-brand {
@@ -67,7 +67,7 @@ body, .jumbotron {
   /*Zorgt ervoor dat de sparkle gif niet de gehele breedte beslaat maar zich beperkt tot de breedte van de content (de tekst)*/
   display: inline-block;
   /*Voegt een achtergrond afbeelding toe achter de tekst wanneer de cursor hierover beweegt*/
-  background-image: url('images/sparkle.gif');
+  background-image: url('../images/sparkle.gif');
 }
 
 .navbar {
@@ -77,10 +77,32 @@ body, .jumbotron {
 
 .header {
   /* een andere foto gebruiken voor de achtergrond van de jumbotron */
-  background-image: url('images/header_bg_alt.jpeg');
+  background-image: url('../images/header_bg_alt.jpeg');
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+.header-breadcrumbs { 
+  /* we herhalen de css van .header aangezien js de hoogte hiervan instelt en we die class niet kunnen gebruiken voor de breadcrumbs */
+  background-image: url('../images/water.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-height: 7rem;
+  height: 7rem;
+}
+
+.page-head-inline {
+  display: inline;
+}
+
+.content-breadcrumbs, .content-breadcrumbs a {
+  color: #f4f4f4;
+}
+
+.content-breadcrumbs a:hover{
+  text-decoration: none;
 }
 
 .jumbotron {
@@ -91,6 +113,12 @@ body, .jumbotron {
 .card-mh {
   max-height: 200px;
   min-height: 200px;
+  object-fit: cover;
+}
+
+.card-mh-large {
+  max-height: 300px;
+  min-height: 300px;
   object-fit: cover;
 }
 
@@ -109,6 +137,20 @@ body, .jumbotron {
 
 .footer-txt {
   font-style: italic;
+}
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
 }
 
 /* Custom CSS einde */

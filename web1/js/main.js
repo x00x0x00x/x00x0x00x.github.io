@@ -6,7 +6,7 @@ function hideDiv(div_id){
 
 // wordt gebruikt door 'ga op avontuur' button in de header
 function goToRandomPage(){
-	var mogelijke_links = ['reizen.html', 'galerij.html', 'reistips.html', 'contact.html'];
+	var mogelijke_links = ['onzereizen.html', 'fotogalerij.html', 'reistips.html', 'contact.html'];
 	var goto = mogelijke_links[Math.floor(Math.random()*mogelijke_links.length) | 0];
 	window.location.href = goto;
 }

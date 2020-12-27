@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Planet Adventure</title>
+      <!-- Nieuwe pagina titel mbt reisbureau-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Bootstrap en custom css importeren -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+
+      <!-- aparte css voor de galerij -->
+      <link rel="stylesheet" href="css/fotogalerij.css">
+
+      <!-- Custom google font, toegewezen aan class 'branding-font' -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@500&display=swap" rel="stylesheet">
+
+      <!-- Een favicon instellen welke toegevoegd werd in /images -->
+      <link rel="shortcut icon" href="images/planet_adventure.ico" type="image/x-icon">  
+
+      <!-- fontawesome cdn -->
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+
+      <!-- Deze wordt weergegeven tot de pagina volledig geladen is -->
+      <div id="loadingOverlay"><p style="color:black;">Gelieve Javascript in te schakelen.</p></div>
+
+      <!-- naar deze div wordt de content van inc/header.html geschreven -->
+      <div id="topDiv">
+        <!-- Default content welke vervangen wordt door js 
+          Voor de externe links wordt target="_blank" gebruikt zodat deze openen
+          in een nieuw tabblad -->
+        <nav class="navbar navbar-expand-md">
+          <p style="color:white;">Gelieve <a target="_blank" href="https://support.microsoft.com/nl-nl/help/3135465/how-to-enable-javascript-in-windows">Javascript in te schakelen</a> om van deze website gebruik te kunnen maken.<br>Als je de website op een lokale machine probeert te openen zal dit niet lukken door de CORS-policy welke van toepassing is op het file:// protocol.<br>Een live instantie is <a target="_blank" href="https://x00x0x00x.github.io/web1/">hier beschikbaar</a>.</p>
+        </nav>
+      </div>
+
+        <!------------------------------------------------------------------------------>
+        <!--------------------------Paginaspecifieke content---------------------------->
+        <!------------------------------------------------------------------------------>
+
+        <!-- de header, welke een jumbotron is en de container binnenin verticaal en horizontaal centreert -->
+
+        <!-- kleinere header variant met navigatie breadcrumbs, fixed height 7rem -->
+
+        <header class="page-header container-fluid pr-0 pl-0 ml-0 mr-0">
+          <div class="jumbotron header-breadcrumbs d-flex align-items-center text-center">
+            <div class="container">
+              <h3 class="content-breadcrumbs"><a href="index.html">Planet Adventure</a> <i class="fal fa-angle-double-right"></i> Fotogalerij</h3>
+            </div>
+          </div>
+        </header>
+
+
+        <!-- bootstrapious fotogalerij start -->
+
+        <div class="container-fluid mt-4">
+          <div class="px-lg-5">
+
+            <div class="row">
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/taj_mahal.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Taj Mahal</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-danger px-3 rounded-pill font-weight-normal">India</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/wash_mon.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Washington Monument</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-primary px-3 rounded-pill font-weight-normal">USA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/arc_trio.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Arc de Triomphe</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">France</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/abra_lin.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Lincoln Memorial</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-primary px-3 rounded-pill font-weight-normal">USA</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/india_gate.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">India Gate</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-danger px-3 rounded-pill font-weight-normal">India</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/qutub_minar.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Qutub Minar</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-danger px-3 rounded-pill font-weight-normal text-white">India</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/pantheon.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Pantheon</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-warning px-3 rounded-pill font-weight-normal">France</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+
+              <!-- Gallery item -->
+              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img src="images/tikal.jpeg" alt="" class="img-fluid card-img-top card-mh-large">
+                  <div class="p-4">
+                    <h5> <a href="#" class="text-dark">Tikal</a></h5>
+                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                      <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+                      <div class="badge badge-info px-3 rounded-pill font-weight-normal text-white">Guatemala</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End -->
+            </div>
+            <div class="py-5 text-right"><a target="_blank" href="https://unsplash.com" class="btn btn-dark px-5 py-3 text-uppercase">Ontdek meer foto's</a></div>
+          </div>
+        </div>
+
+        <!-- bootstrapious fotogalerij einde -->
+
+        <!------------------------------------------------------------------------------>
+        <!------------------------Paginaspecifieke content einde------------------------>
+        <!------------------------------------------------------------------------------>
+
+        <!-- naar deze div wordt de footer geschreven door middel van javascript -->
+        <div id="bottomDiv">
+          <p>Gelieve Javascript in te schakelen.</p>
+        </div>
+        
+
+      <!-- jquery slim min js vervangen door jquery min js om gebruik te kunnen maken van ajax functionaliteit -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

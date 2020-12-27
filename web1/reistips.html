@@ -39,22 +39,20 @@
         <!--------------------------Paginaspecifieke content---------------------------->
         <!------------------------------------------------------------------------------>
 
-        <!-- de header, welke een jumbotron is en de container binnenin verticaal en horizontaal centreert -->
+        <!-- kleinere header variant met navigatie breadcrumbs, fixed height 7rem -->
 
         <header class="page-header container-fluid pr-0 pl-0 ml-0 mr-0">
-          <div class="jumbotron header d-flex align-items-center text-center">
+          <div class="jumbotron header-breadcrumbs d-flex align-items-center text-center">
             <div class="container">
-              <h1>Welkom bij <div class="branding-font">Planet Adventure</div></h1>
-              <!--stuurt de gebruiker naar een willekeurige pagina. feeling lucky? -->
-              <button class="btn btn-secondary" onclick="goToRandomPage()">Ga op avontuur</button>
+              <h3 class="content-breadcrumbs"><a href="index.html">Planet Adventure</a> <i class="fal fa-angle-double-right"></i> Reistips</h3>
             </div>
           </div>
         </header>
-        
+
         <!-- Responsive kolommen dmv het grid systeem
-          col-lg-3 * 4 = 12 - desktop
+          col-lg-4 * 3 = 12 - desktop
           col-md-6 * 2 = 12 - tablet
-          col-sm-12 * 1 = 12 - smartphone (zowel horizontaal als verticaal)
+          col-sm-12 * 1 = 12 - smartphone (zowel horizontaal als verticaal) 
 
           bij elke kolom is een bottom margin toegevoegd dmv mb-4 om er voor te zorgen dat:
           - er witruimte is tussen de cards en de footer
@@ -63,54 +61,73 @@
           om er voor te zorgen dat er witruimte is tussen de header en de cards wordt bij de container mt-4 toegevoegd, dit wordt niet bij de cards gezet aangezien dit tot dubbele witruimte zou leiden tussen de cards op mobiel / tablet
 
           pr-0 werd toegevoegd om de afstand tussen de cards te verminderen
-
-          voor de pijltjes werd alt code 26 gebruikt
         -->
         <div class="container mt-4">
+          <div class="pb-2"> 
+            <!-- display inline wordt gebruikt om de tekst naast elkaar weer te geven, zie page-head-inline 
+
+              om wat ruimte te geven tussen titel en cards/cols wordt pb-2 gebruikt-->
+            <h2 class="page-head-inline pr-3">Onze Reizen</h2><h4 class="page-head-inline">Ontdek ze hier <i class="fal fa-level-down"></i></h4>
+          </div>
+
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
               <div class="card">
-                <img src="images/spain.jpeg" class="card-img-top card-mh">
+                <img src="images/france.jpeg" class="card-img-top card-mh-large">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Spanje</h5>
+                  <h5 class="card-title">Frankrijk</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#" class="btn btn-primary">Ontdek Spanje →</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
               <div class="card">
-                <img src="images/sweden.jpeg" class="card-img-top card-mh">
+                <img src="images/south_africa.jpeg" class="card-img-top card-mh-large">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Zweden</h5>
+                  <h5 class="card-title">Zuid-Afrika</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#" class="btn btn-primary">Ontdek Zweden →</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
               <div class="card">
-                <img src="images/canada.jpeg" class="card-img-top card-mh">
+                <img src="images/los_angeles.jpeg" class="card-img-top card-mh-large">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Canada</h5>
+                  <h5 class="card-title">Los Angeles</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#" class="btn btn-primary">Ontdek Canada →</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 mb-4 pr-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
               <div class="card">
-                <img src="images/colombia.jpeg" class="card-img-top card-mh">
+                <img src="images/miami.jpeg" class="card-img-top card-mh-large">
                 <div class="card-body text-center">
-                  <h5 class="card-title">Colombia</h5>
+                  <h5 class="card-title">Miami</h5>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  <a href="#" class="btn btn-primary">Ontdek Colombia →</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
+              <div class="card">
+                <img src="images/croatia.jpeg" class="card-img-top card-mh-large">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Kroatië</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 pr-0">
+              <div class="card">
+                <img src="images/malta.jpeg" class="card-img-top card-mh-large">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Malta</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+        
         <!------------------------------------------------------------------------------>
         <!------------------------Paginaspecifieke content einde------------------------>
         <!------------------------------------------------------------------------------>
