@@ -1,3 +1,12 @@
+/* 
+Mbt de ipad weergave en de navbar heb ik gemerkt dat het hamburgermenu verschijnt op 767px of minder
+maar de inspect element iPad weergave van 768px gebruik maakt, een verschil van 1px. 
+
+Het kan zijn dat dit te wijten is aan mijn browser (opera) of een fout betreft bij bootstrap (lijkt me onwaarschijnlijk, vind er niks over terug behalve een post van 2017)
+Het zou mogelijk zijn om de breakpoints te wijzigen, maar dat doe ik liever niet.
+https://stackoverflow.com/questions/47747208/bootstrap-4-change-breakpoints
+*/ 
+
 /* Custom CSS start */
 body, .jumbotron {
   padding: 0;
