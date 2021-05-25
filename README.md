@@ -4,4 +4,4 @@ Een simpele reiswebsite welke gebruik maakt van een klein beetje Javascript en h
 
 Weergave van de content is steeds responsive.
 
-[Bekijken](benjaminvanrenterghem.github.io)
+[Bekijken](https://benjaminvanrenterghem.github.io/web1/)
